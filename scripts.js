@@ -42,6 +42,7 @@ function trrue(params) {
   }
 
   function go1screen() {
+    trruev=0
   for (let index = 1; index < 5; index++) {
     $('.screen,.second')[index].style.display='none'
   $('.screen,.second')[index].style.opacity='0'
