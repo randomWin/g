@@ -30,7 +30,7 @@ function trrue(params) {
       goSecScreen()
       setTimeout(() => {
         $('.screen,.first input')[1].value=undefined
-      }, 200);
+      }, 2000);
     }
   }
   function fscreeninput(el) {
