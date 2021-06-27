@@ -110,7 +110,7 @@ function vin(mans) {
   if (trruev!==1 ) {
     return 1  
   }else{
-    return getRandomInRange(0, mans)
+    return getRandomInRange(1, mans)
   }
 }
 function go5screen(){
