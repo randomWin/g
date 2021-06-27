@@ -22,6 +22,8 @@ function trrue(params) {
   var mans=0
   var lie=0
   var trruev=0
+
+  $('.screen,.first input')[1].value='120'
   function fscreengo(el) {
     if (+$('.screen,.first input')[1].value<=0) {
       alert('столько участников не бывает!')
