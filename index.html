@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<!-- Не забывай комментировать :—) -->
+<head>
+<meta charset="UTF-8">
+<title>Генератор победителей</title>
+
+<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+<link rel="manifest" href="img/site.webmanifest">
+<link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#9f00a7">
+<meta name="theme-color" content="#ffffff">
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/ico" sizes="64x64" href="img/favicon64.ico">
+<link href="https://fonts.googleapis.com/css?family=Inter:300,400,500,900&display=swap&subset=cyrillic-ext" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body id='bdy'>
+
+    <div class="first screen">
+        <div class="disc">
+            <p>Нужно выбрать победителя? Наш сервис поможет в различных розыгрышах. Просто укажите колличество участиков, а остальное сделаем сами. </p>
+            <p>Генератор создаёт случайные числа на удалённом сервере по новым математическим алгоритмам. Это значит, что победитель будет по-настоящему случайным. </p>
+        </div>
+        <div class="tit">Сколько человек участвует в конкурсе <span onclick="trrue()">?</span></div>
+        <div class="cont">
+            <input class="inp" oninput="fscreeninput(this)" placeholder="120"  type="number"/>
+            <div class="go" onclick="fscreengo(this)">
+                <svg  x="0px" y="0px"viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve"><g><g><path d="M506.134,241.843c-0.006-0.006-0.011-0.013-0.018-0.019l-104.504-104c-7.829-7.791-20.492-7.762-28.285,0.068c-7.792,7.829-7.762,20.492,0.067,28.284L443.558,236H20c-11.046,0-20,8.954-20,20c0,11.046,8.954,20,20,20h423.557l-70.162,69.824c-7.829,7.792-7.859,20.455-0.067,28.284c7.793,7.831,20.457,7.858,28.285,0.068l104.504-104c0.006-0.006,0.011-0.013,0.018-0.019C513.968,262.339,513.943,249.635,506.134,241.843z"/></g></g></svg>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="second screen">
+        <div class="cssload-thecube">
+            <div class="cssload-cube cssload-c1"></div>
+            <div class="cssload-cube cssload-c2"></div>
+            <div class="cssload-cube cssload-c4"></div>
+            <div class="cssload-cube cssload-c3"></div>
+        </div>
+    </div>
+
+    <div class="screen third">
+        <div class="tit">Сколько человек участвует в конкурсе?</div>
+            <div onclick="go4screen(this)" class="go">старт</div>
+    </div>
+
+    <div class="screen for">
+        <div id="escapingBallG">
+            <div id="escapingBall_1" class="escapingBallG"></div>
+        </div>
+    </div>
+
+    <div class="screen fif">
+        <div class="tit">Сколько человек участвует в конкурсе?</div>
+        <div onclick="go1screen(this)" class="go">старт</div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
